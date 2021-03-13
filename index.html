@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <title>Trello</title>
+    <link href="./task.css" rel='stylesheet' />
+</head>
+
+<body>
+    <div class="board">
+        <header>Trello Board</header>
+        <section>
+            <div class="add-list">
+                <div>
+                    <form class="add-list-form">
+                        <div>
+                            <label>Name</label><br />
+                            <input name='list-name' type="text" />
+                        </div>
+                        <input value="Add" type='submit' />
+                    </form>
+                    <form class="add-task-form">
+                        <div>
+                            <label>Title</label><br />
+                            <input name='title' type="text" />
+                        </div>
+                        <div>
+                            <label>Description</label><br />
+                            <input name='description' type="text" />
+                        </div>
+                        <input value="Add" type='submit' />
+                    </form>
+                </div>
+                <button class="add-btn" onclick="toggleListForm()">Add List</button>
+            </div>
+            <div class="task-container">
+
+            </div>
+        </section>
+    </div>
+    <script src="./common.js"></script>
+    <script type="module" src='./index.js'></script>
+</body>
+
+</html>
